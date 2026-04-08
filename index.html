@@ -5,15 +5,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p id="scoreBar">Score: 0</p>
-
-    <canvas id="gameCanvas"
-        width="400";
-        height="400";
-        style="background: #1a1a1a">
-    </canvas>
-
-    <button onclick="move()" id="startBtn">Start Game</button>
+ 
+    <div id="gameWrapper">
+        <p id="scoreBar">Score: 0</p>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <button id="startBtn">Start Game</button>
+    </div>
+    <div id="overlay">
+        <div id="popup">
+            <h2>💀 Game Over!</h2>
+            <p>Your Score: <span id="popupScore">0</span></p>
+            <p>🏆 High Score: <span id="popupHighScore">0</span></p>
+            <button id="restartBtn">Play Again</button>
+        </div>
+    </div>
+ 
     <script src="script.js"></script>
 </body>
 </html>
+ 
